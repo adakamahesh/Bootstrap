@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-lg my-5">
+        <h2>Basic grid</h2>
+        <div class="row">
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col 1</div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col 2</div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col 3</div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-light">col 4</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg my-5">
+        <h2>column widths</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="p-5 bg-primary text-light">col 1</div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg my-5">
+        <h2>responsive column widths</h2>
+        <div class="row">
+            <div class="col-sm-4 col-lg-6">
+                <div class="p-5 bg-primary text-light">col 1</div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-lg my-5">
+        <h2>justifying columns</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 1</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 2</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-5 bg-primary text-light">col 3</div>
+            </div>
+        </div>
+    </div>
+    <!-- main image & intro text -->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black-Belt</div>
+                        <div class="display-5 text-muted">Your coding skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">Bye Now</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <img src="data:image/jpeg;base64,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" alt="not found image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
